@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            background-color: yellowgreen;
+        }
+        ul li:last-child{
+            background-color: yellowgreen;
+        }
+
+        ul li:nth-child(2n){
+            background-color: blue;
+        }
+
+        ::selection{
+            background-color: black;
+            color: blue;
+        }
+        
+        /*#para::first-line{
+            background-color: brown;
+        }*/
+
+        #para:hover::before{
+            content: "Hello Techno ";
+            width: 20px;
+            height: 30px;
+            background-color: blueviolet;
+
+        }
+
+        #container{
+            width:300px ;
+            height: 300px;
+            background-color: violet;
+            /*transform: translate(250px,100px);*/
+            transition: 1s ease-in-out;
+            /*transform: rotate(180deg);*/
+            /*transform: skew(-45deg);*/
+            
+            font-size: 50px;
+        }
+
+        
+        #container:hover #box{
+            transform: rotate(180deg);
+            background-color: rgba(128, 255, 0, 0.5);
+            border-radius: 50%;         
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item  1</li>
+        <li>item  2</li>
+        <li>item  3</li>
+        <li>item  4</li>
+        <li>item  5</li>
+        <li>item  6</li>
+    </ul>
+
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ul>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum harum corrupti pariatur molestiae voluptatibus ea? Libero, non molestias explicabo voluptates illum deleniti? Nemo sed sunt nostrum,
+         ad consequatur cumque impedit?
+        Lorem ipsum dolor sit
+         amet consectetur adipisicing elit. Quisquam, eveniet officiis delectus ut consectetur, earum, maiores eaque illum iste non velit. Aliquid error consequuntur tempore harum asperiores e
+        ligendi voluptatum repellat.
+    </p>
+
+    <div id="container">
+        <div id="box"></div>
+    </div>
+</body>
+</html>

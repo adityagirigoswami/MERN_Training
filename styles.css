@@ -1,0 +1,170 @@
+/* body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(49, 75, 139);
+    overflow: hidden;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right : 0;
+    
+    /* z-index: 1000;
+     display: flex;
+    justify-content: space-between; */
+/* }
+
+nav ul {
+    list-style-type: none;
+    margin: 200;
+    padding: 100;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(28, 151, 217);
+    text-align: right;
+    padding: 14px 20px;
+    text-decoration:rgb(28, 151, 217)seashell;
+}
+
+.right {
+    margin-left: auto; /* Pushes the element to the right */
+/* }
+
+.content {
+    padding-top: 50px; /* Adjust based on the height of your nav bar */
+/* }
+
+
+nav ul li a:hover {
+    background-color: rgb(12, 110, 215);
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    background-color: #3b5998;
+    padding: 50px 0;
+    top:0;
+    
+}
+
+.login-container {
+    float: right;
+    margin-right: 100px;
+}
+
+.login-container form {
+    display: flex;
+    align-items: right;
+}
+
+.login-container label {
+    color: white;
+    margin-right: 5px;
+}
+
+.login-container input {
+    margin-right: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.login-container button {
+    padding: 5px 10px;
+    background-color: #4267b2;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.login-container .forgotten-account {
+    color: #dfe3ee;
+    margin-left: 10px;
+}
+
+.main-content {
+    margin: 100px auto;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: right;
+}
+
+.main-content h1 {
+    color: #333;
+}
+
+.main-content p {
+    color: #666;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.birthday-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday-select select {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    margin: 5px 10px;
+    color: #777;
+    text-decoration: none;
+}

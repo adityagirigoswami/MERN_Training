@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            height: 70vh;
+            display: grid;
+            flex-direction: column;
+            grid-template-columns: repeat(3,1fr);
+            background-color: rgba(0, 255, 255, 0.356);
+            gap: 10px;
+            grid-template-areas: "hdr hdr hdr hdr"
+                                  "sbr main main main"
+                                  "fit fit fit fit";
+
+        }
+        .box{
+            border: 3px solid rgba(0, 128, 0, 0.498);
+            background-color: red;
+            
+        }
+        #box1{
+            
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        #box3{
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box3</div>
+            <div class="box">box4</div>
+            <div class="box">box5</div>
+            <div class="box">box6</div>
+            <div class="box">box8</div>
+            <div class="box">box9</div>
+            <div class="box">box7</div>
+            <div class="box">box7</div>  
+            <div class="box">box7</div>
+            <div class="box">box7</div>
+
+
+        </div>
+</body>
+</html>
