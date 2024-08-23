@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .header_container{
+            width: 100%;
+            background-color: rgb(240, 240, 240);
+        }
+        .header_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1rem;
+        }
+        .logo_container a{
+            display: flex;
+            text-decoration: none;
+            background-color: rgb(240, 240, 240);
+            /* justify-content: center; */
+            align-items: center;
+            color: rgb(60, 60, 60);
+            gap: 0.3rem;
+        }
+        .header_image{
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+        .menu_button{
+            display: flex;
+            gap: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_content">
+                <div class="logo_container">
+                    <a href="#">
+                        <img src="logo.png" alt="logo" class="header_image">
+                        <h2>nicepage</h2>
+                    </a>
+                </div>
+                <div class="menu_button">
+                    <a href="#"><img src="monitor_logo.png" alt="moniter_logo"></a>
+                    <a href="#"><img src="laptop_logo.png" alt="laptop_logo"></a>
+                    <a href="#"><img src="tablet_logo.png" alt="tablet_logo"></a>
+                    <a href="#"><img src="mobile_landscape_logo.png" alt="mobile_landscape_logo"></a>
+                    <a href="#"><img src="mobile_potrait_logo.png" alt="mobile_potrait_logo"></a>
+                </div>
+                <div class="cross_button">
+                    <a href="#"><img src="cross.png" alt="cross_button"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+</body>
+</html>

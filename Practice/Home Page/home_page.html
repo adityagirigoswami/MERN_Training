@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* .header_container{
+            width: 100vw;
+        } */
+        .header_content{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 5rem;
+        }
+        .logo_container{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .logo_desc{
+            display: flex;
+            flex-direction: column;
+        }
+        .logo_image{
+            width: 2.3rem;
+            height: 2.3rem;
+        }
+        .logo_heading{
+            font-size: 1.5rem;
+        }
+        .logo_para{
+            font-size: 0.56rem;
+            font-weight: 560;
+        }
+        .tab_container{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 5rem;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .tab_container a{
+            text-decoration: none;
+            color: black;
+        }
+        .home_tab_container{
+            color: rgb(199, 22, 22);
+        }
+        .donate_button{
+            background-color: rgb(199, 22, 22);
+            color: white;
+            border: none;
+            padding: 0 1.38rem;
+        }
+        .main_container{
+            background-image: url('BG.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            /* background-attachment: fixed; */
+        }
+        .main_content{
+            padding: 12.1rem;
+            padding-top: 15rem;
+            padding-bottom: 12rem;
+            margin-left: 50rem;
+            display: flex;
+            flex-direction: column;
+            justify-self: end;
+            align-items: start;
+            width: 42vw;
+        }
+        .main_heading{
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 0.4rem;
+        }
+        .main_button{
+            padding: 0.5rem 2rem;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+        .main_s_heading{
+            font-size: 1rem;
+            color: white;
+            margin-bottom: 1.8rem;
+        }
+        .footer_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1.7rem 4rem;
+        }
+        .footer_heading{
+            font-size: 1.3rem;
+        }
+        .footer_input{
+            padding: 0.3rem;
+            width: 18rem;
+            border: 1px solid rgb(200, 191, 191);
+        }
+        .footer_button{
+            background-color: rgb(45, 119, 246);
+            color: white;
+            padding: 0.475rem 1.5rem;
+            border: none;
+            font-size: 0.6rem;
+        }
+        .input_container{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="header_container">
+            <div class="header_content">
+                <div class="logo_container">
+                    <img src="main_logo.png" alt="logo" class="logo_image">
+                    <div class="logo_desc">
+                        <h2 class="logo_heading">dream center</h2>
+                        <p class="logo_para">CARE SUPPORT PURPOSE</p>
+                    </div>
+                </div>
+                <div class="tab_container">
+                    <a href="#"><span class="home_tab_container">HOME</span></a>
+                    <a href="#">WHAT TO DO</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">CONTACTS</a>
+                </div>
+                <button class="donate_button">DONATE NOW</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_container">
+            <div class="main_content">
+                <h1 class="main_heading">Making More of Every Gift</h1>
+                <h3 class="main_s_heading">No child should be forgotten</h3>
+                <button class="main_button">WHAT WE DO</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_content">
+                <h2 class="footer_heading">Sign Up & Stay Connected</h2>
+                <div class="input_container">
+                    <input type="text" placeholder="Enter your email" class="footer_input">
+                    <button class="footer_button">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
