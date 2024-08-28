@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="toggleElement" class="hidden">
+        This content is hidden by default.
+    </div>
+    <button id="toggleButton">Show/Hide Content</button>
+
+    <script>
+        // Get the button and the element to toggle
+        var button = document.getElementById("toggleButton");
+        var element = document.getElementById("toggleElement");
+
+        // Add an event listener to the button
+        button.addEventListener("click", function() {
+            // Toggle the 'hidden' class on the element
+            element.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

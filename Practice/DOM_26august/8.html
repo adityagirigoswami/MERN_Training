@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Input Value</title>
+</head>
+<body>
+    <h2>Enter your text:</h2>
+    <input type="text" id="userInput" placeholder="Type something...">
+    <button id="displayButton">Display Text</button>
+
+    <p id="displayArea"></p>
+
+    <script>
+        // Get the button and input field elements
+        var button = document.getElementById("displayButton");
+        var input = document.getElementById("userInput");
+        var displayArea = document.getElementById("displayArea");
+
+        // Add an event listener to the button
+        button.addEventListener("click", function() {
+            // Get the value of the input field
+            var inputValue = input.value;
+
+            // Display the value in the display area
+            displayArea.textContent = "You entered: " + inputValue;
+        });
+    </script>
+</body>
+</html>
